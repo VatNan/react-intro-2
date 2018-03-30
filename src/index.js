@@ -10,10 +10,13 @@ import ReactDOM from 'react-dom';
  * comment line 7
  * uncomment underline
  * change target component in ReactDOM.render to LPropstype component */
-import LPropstype from './labs/LPropstype';
+// import LPropstype from './labs/LPropstype';
 
-
-
+/** step 2 props-type
+ * comment line 7
+ * uncomment underline
+ * change target component in ReactDOM.render to LLifecycle component */
+import LLifecycle from './labs/LLifecycle';
 
 class Intro extends Component {
   render() {
@@ -25,8 +28,7 @@ class Intro extends Component {
   }
 }
 
-
 ReactDOM.render(
-  <LPropstype />,
+  <LLifecycle />,
   document.getElementById('root')
 );
