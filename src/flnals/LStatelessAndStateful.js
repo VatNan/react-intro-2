@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 function Button(props) {
   return (
@@ -13,28 +13,29 @@ function Button(props) {
 
 class ButtonCallAlert extends Component {
   alertNow() {
-    alert('Alert by alertNow()');
+    alert("Alert by alertNow()");
   }
 
   alertSlowLife() {
-    setTimeout(() => alert('Alert by alertSlowLife()'), 5000);
+    setTimeout(() => alert("Alert by alertSlowLife()"), 5000);
   }
-  
+
   render() {
     return (
-      <Button
-        title="show alert"
-        onClickButton={() => this.alertSlowLife()}
-      />
+      <Button title="show alert" onClickButton={() => this.alertSlowLife()} />
     );
   }
 }
 
 class ButtonCallReactPage extends Component {
   openReactPage() {
-    window.open('https://reactjs.org/', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    window.open(
+      "https://reactjs.org/",
+      "_blank",
+      "location=yes,height=570,width=520,scrollbars=yes,status=yes"
+    );
   }
-  
+
   render() {
     return (
       <Button
@@ -47,12 +48,12 @@ class ButtonCallReactPage extends Component {
 
 class ButtonCountMe extends Component {
   state = {
-    count: 0,
+    count: 0
   };
 
   onCount() {
     this.setState({
-      count: this.state.count + 1,
+      count: this.state.count + 1
     });
   }
 
