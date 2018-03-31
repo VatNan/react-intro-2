@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
-function Button(props) {
-  return (
-    <button
-      style={{ backgroundColor: "purple", color: "white", padding: "20px" }}
-      onClick={props.onClickButton}
-    >
-      {props.title}
-    </button>
-  );
-}
+const Button = props => (
+  <button
+    style={{ backgroundColor: "purple", color: "white", padding: "20px" }}
+    onClick={() => props.onClickButton()}
+  >
+    {props.title}
+  </button>
+);
 
 class ButtonCallAlert extends Component {
   alertNow() {
