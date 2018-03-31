@@ -22,7 +22,13 @@ import ReactDOM from "react-dom";
  *  comment line 19
  *  uncomment underline
  *  change target component in ReactDOM.render to LStatelessAndStateful component */
-import LStatelessAndStateful from './labs/LStatelessAndStateful';
+// import LStatelessAndStateful from './labs/LStatelessAndStateful';
+
+/** step 4 Controller component vs UnController component
+ *  comment line 25
+ *  uncomment underline
+ *  change target component in ReactDOM.render to LStatelessAndStateful component */
+// import LControllerComponent from './labs/LControllerComponent';
 
 class Intro extends Component {
   render() {
@@ -34,4 +40,4 @@ class Intro extends Component {
   }
 }
 
-ReactDOM.render(<LStatelessAndStateful />, document.getElementById("root"));
+ReactDOM.render(<Intro />, document.getElementById("root"));
