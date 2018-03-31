@@ -27,8 +27,14 @@ import ReactDOM from "react-dom";
 /** step 4 Controller component vs UnController component
  *  comment line 25
  *  uncomment underline
- *  change target component in ReactDOM.render to LStatelessAndStateful component */
+ *  change target component in ReactDOM.render to LControllerComponent component */
 // import LControllerComponent from './labs/LControllerComponent';
+
+/** step 5 HOC
+ *  comment line 31
+ *  uncomment underline
+ *  change target component in ReactDOM.render to LHOC component */
+// import LHOC from './labs/LHOC';
 
 class Intro extends Component {
   render() {
