@@ -19,12 +19,13 @@ ShowMultiply.propTypes = {
 ShowMultiply.defaultProps = {
 };
 
-class LPropstype extends Component {
+class LProptypes extends Component {
   render() {
     return (
       <div>
+        <h1>1 PropTypes and DefaultProps</h1>
         <ShowMultiply a={1} b={5} />
-        <ShowMultiply a="5" b={"5"} />
+        <ShowMultiply a="5" b={'5'} />
         <ShowMultiply a={5} b={2} />
         <ShowMultiply a={1} />
       </div>
@@ -33,4 +34,4 @@ class LPropstype extends Component {
 }
 
 /** step 1.4(final) clear warning and refactoring code by ESNext */
-export default LPropstype;
+export default LProptypes;
