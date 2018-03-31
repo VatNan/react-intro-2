@@ -1,5 +1,5 @@
 /** step 3.1 call Stateless
- * call Stateless Component and pass props 
+ * call Stateless Component and pass props
  * - title = "show alert"
  * - onClickButton = alertNow
  * in render of Stateful Component */
@@ -18,9 +18,7 @@
  * create ButtonCountMe component
  * >0< */
 
-
-
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 /** Stateful component or Class component
  * - can have props (read props, prop-types, default props)*/
@@ -41,21 +39,17 @@ function Stateless(props) {
  * - have lifecycle */
 class Stateful extends Component {
   alertNow() {
-    alert('Alert by alertNow()');
+    alert("Alert by alertNow()");
   }
 
   alertSlowLife() {
-    setTimeout(() => alert('Alert by alertSlowLife()'), 5000);
+    setTimeout(() => alert("Alert by alertSlowLife()"), 5000);
   }
-  
+
   render() {
-    return (
-      <div /> 
-    );
+    return <div />;
   }
 }
-
-
 
 class LStatelessAndStateful extends Component {
   render() {
